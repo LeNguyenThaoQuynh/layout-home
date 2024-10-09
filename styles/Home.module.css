@@ -1,0 +1,111 @@
+/*Kích thước chính của trang*/
+.container {  
+  width: 100%;
+  height: 100vh;
+}
+
+/* ---NAVBAR--- */
+.nav {
+  display: flex;    /*Để sử dụng các flexbox (justify-content,...)*/
+  justify-content: space-around;  /*Các phần tử có khoảng cách bằng nhau*/
+  align-items: center;    /*Căn giữa theo chiều dọc*/
+  position: fixed;        /* Cố định thanh navbar khi cuộn trang */
+  height: 50px;   
+  right: 0;
+  left: 0;    
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+  width: 50px;  
+}
+
+.nav ul {
+  list-style: none;   
+}
+
+.nav ul li {
+  display: inline-block; /*Các item trong list nằm trên 1 hàng ngang */
+  margin-right: 40px;
+  color: #000;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.nav ul li:hover {    /*Hiệu ứng khi rê chuột vào Home,About...*/
+  font-weight: bold;
+  border-bottom: 2px solid #fac031;
+}
+
+.icon i {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.icon i:hover {     /*Hiệu ứng khi rê chuột vào icon*/
+  color: #fac031;
+  cursor: pointer;  /*Trỏ chuột chuyển sang bàn tay*/
+}
+
+
+/* HOME */
+.main {
+  display: flex;
+  align-items: center;
+  position: relative; 
+  top: 100px;
+  width: 100%;
+}
+
+/* ---LEFT--- */
+.left {
+  flex: 1;      /* Chiếm 50% chiều rộng của trang */
+  padding: 20px 20px 20px 50px;   
+  display: flex;
+  flex-direction: column;   /* Xếp các phần tử theo chiều dọc */
+  justify-content: center;
+}
+
+.tittle {
+  margin-bottom: 30px;
+}
+
+.tittle h1 {
+  font-size: 60px;
+}
+
+.tittle h1 span {       /*Chữ Food*/
+  margin-left: 15px;
+  color: #fac031;
+  font-family: mv boli;   
+  line-height: 22px;
+  font-size: 70px;
+}
+
+.description {
+  width: 650px;       /*Chiều rộng của cả đoạn*/
+  text-align: justify;  /*Đoạn text căn đều 2 bên*/
+  line-height: 22px;    /*Khoảng cách giữa các dòng*/
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: #fac031;
+  width: 150px;     /*Chiều rộng button*/
+  cursor: pointer;
+  padding: 12px;    /*Khoảng cách từ chữ Order tới viền button*/
+  border: none; 
+  color: #fff;
+}
+
+
+/* ---RIGHT--- */
+.right {
+  flex: 1;  /* Chiếm 50% chiều rộng */
+}
+
+.right img {
+  width: 100%; 
+  max-width: 700px;   
+}
